@@ -44,7 +44,7 @@ double* manualFiling(int r, int c){
 
 double* randomlFiling(int r, int c){
     double* a = (double*)malloc(sizeof(double) * r * c);
-    int max = 1000, min = -1000;
+    int max = 1000, min = 0;
     for(int i = 0;i < r*c;i++){
         a[i] = rand() % (max - min + 1) + min;;
     }
@@ -90,24 +90,30 @@ int search_max_cols(Matrix* m){
 }
 
 void sort_matrix(Matrix* m, int index_sort){
-    double* sort_arr = (double*)malloc(sizeof(double) * m->rows);
+    int n = m->rows < m->columns ? m->rows : m->columns;
+
+    double* sort_arr = (double*)malloc(sizeof(double) * n);
+    for(int i = 0;i < n;i++) sort_arr[i] = 0;
     for(int x = index_sort; x < index_sort+1; x++) {
-        for(int y = 0; y < m->columns; y++) {
-            sort_arr[y] = m->matrix[x*(m->columns) + y];
+        for(int y = 0; y < n; y++) {
+            sort_arr[y] = m->matrix[index_sort*(n) + y];
         }
     }
-    for(int i = 0;i < m->rows-1;i++){
-        for(int j = 0;j < m->rows-1-i;j++){
-            if(sort_arr[i] > sort_arr[j+1]){
+    for(int i = 0;i < n-1;i++){
+        for(int j = 0;j < n-1-i;j++){
+            if(sort_arr[j] > sort_arr[j+1]){
                 double b = sort_arr[j];
                 sort_arr[j] = sort_arr[j+1];
                 sort_arr[j + 1] = b;
             }
         }
     }
+
+    //for(int i = 0;i < m->rows;i++) cout << endl << sort_arr[i];
+
     for(int x = index_sort; x < index_sort+1; x++) {
-        for(int y = 0; y < m->columns; y++) {
-            m->matrix[x*(m->columns) + y] = sort_arr[y];
+        for(int y = 0; y < n; y++) {
+            m->matrix[x*(n) + y] = sort_arr[y];
         }
     }
     free(sort_arr);
@@ -141,7 +147,7 @@ int number_max_row(Matrix* matrix){
 //SHOW
 
 void print_matrix(Matrix* m){
-    cout << "\t\t" << "Matrix:";
+    cout <<endl << "\t\t" << "Matrix:";
     for(int x = 0; x < m->rows; x++) {
         cout << "\n";
         for(int y = 0; y < m->columns; y++) {
@@ -152,7 +158,7 @@ void print_matrix(Matrix* m){
 }
 
 void print_info(Matrix m){
-    cout << endl << "Max columns: " << search_max_cols(&m) << endl;
+    cout << endl << "Max column: " << search_max_cols(&m) << endl;
     cout << "Max number row:  " << number_max_row(&m) << endl;
 }
 //DELETE
