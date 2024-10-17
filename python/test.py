@@ -87,75 +87,77 @@
 #         print(h, j)
 #         break 
 
-import math
+# import math
 
-def FindFactors(num: int):
-    factors = []
-    while(num % 2 == 0):
-        factors.append(2)
-        num = num/2
-    i = 3
-    max_factor = math.sqrt(num)
-    while(i <= max_factor):
-        while(num % i == 0):
-            factors.append(i)
-            num = num / i
-            max_factor = math.sqrt(num)
-        i += 2
-    if(num>1):
-        factors.append(num)
-    return factors
+# def FindFactors(num: int):
+#     factors = []
+#     while(num % 2 == 0):
+#         factors.append(2)
+#         num = num/2
+#     i = 3
+#     max_factor = math.sqrt(num)
+#     while(i <= max_factor):
+#         while(num % i == 0):
+#             factors.append(i)
+#             num = num / i
+#             max_factor = math.sqrt(num)
+#         i += 2
+#     if(num>1):
+#         factors.append(num)
+#     return factors
 
-def FindPrimes(num: int):
-    is_composite = []
+# def FindPrimes(num: int):
+#     is_composite = []
 
-    for i in range(num):
-        is_composite.insert(i, False)
+#     for i in range(num):
+#         is_composite.insert(i, False)
 
-    for i in range(4, num, 2):
-        is_composite[i] = True
+#     for i in range(4, num, 2):
+#         is_composite[i] = True
     
-    next_prime = 3
-    stop_at = math.sqrt(num)
-    while(next_prime <= stop_at):
-        for i in range(next_prime*2, num, next_prime):
-            is_composite[i] = True
+#     next_prime = 3
+#     stop_at = math.sqrt(num)
+#     while(next_prime <= stop_at):
+#         for i in range(next_prime*2, num, next_prime):
+#             is_composite[i] = True
         
-        next_prime = next_prime+2
-        while(next_prime<=num and is_composite[next_prime]):
-            next_prime += 2 
+#         next_prime = next_prime+2
+#         while(next_prime<=num and is_composite[next_prime]):
+#             next_prime += 2 
 
-    primes = []
-    for i in range(num):
-        if(is_composite[i] == False):
-            primes.append(i)
-    return primes
+#     primes = []
+#     for i in range(num):
+#         if(is_composite[i] == False):
+#             primes.append(i)
+#     return primes
 
 
-def CheckPrimes(num: int):
-    if (2^(num-1)) % num == 1:
-        return True
-    else:
-        return False
+# def CheckPrimes(num: int):
+#     if (2^(num-1)) % num == 1:
+#         return True
+#     else:
+#         return False
 
-def CoinBone(a : int, b: int, m: int):
-    _min = 1
-    _max = 6
-    x = 0
-    x = (a*x+b)%m
-    while x != 0:
-        x = (a*x+b)%m
-        res = _min+x%(_max-_min+1)
-        if res <= 3:
-            print("орёл")
-        else:
-            print("решка")
+# def CoinBone(a : int, b: int, m: int):
+#     _min = 1
+#     _max = 6
+#     x = 0
+#     x = (a*x+b)%m
+#     while x != 0:
+#         x = (a*x+b)%m
+#         res = _min+x%(_max-_min+1)
+#         if res <= 3:
+#             print("орёл")
+#         else:
+#             print("решка")
 
-def PickM(array: list, m: int):
-    max_i = len(array)-1
-    for i in range(m):
-        j = i+i%(max_i-i+1)
-        array[i] = array[j]
-    return array
+# def PickM(array: list, m: int):
+#     max_i = len(array)-1
+#     for i in range(m):
+#         j = i+i%(max_i-i+1)
+#         array[i] = array[j]
+#     return array
 
-print(PickM([1, 2, 3, 4, 5], 3)) 
+# print(PickM([1, 2, 3, 4, 5], 3)) 
+
+
