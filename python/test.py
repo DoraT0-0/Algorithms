@@ -1,3 +1,6 @@
+print(10^(5/2))
+
+
 # class Tree():
 #     def __init__(self, data) -> None:
 #         self.data = data

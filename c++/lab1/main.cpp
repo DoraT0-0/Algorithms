@@ -44,7 +44,7 @@ double* manualFiling(int r, int c){
 
 double* randomlFiling(int r, int c){
     double* a = (double*)malloc(sizeof(double) * r * c);
-    int max = 1000, min = 0;
+    int max = 1000, min = -1000;
     for(int i = 0;i < r*c;i++){
         a[i] = rand() % (max - min + 1) + min;;
     }
