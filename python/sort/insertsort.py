@@ -7,5 +7,5 @@ def insert_sort(arr:list):
             j -= 1
         arr[j] = x
     return arr 
-arr = [1, 4, 5, 3 ,2]
-print(insert_sort(arr))
+# arr = [1, 4, 5, 3 ,2]
+# print(insert_sort(arr))
