@@ -14,11 +14,8 @@ Matrix* fill_null_matrix(int rows, int cols){
     Matrix* matrix = (Matrix*)malloc(sizeof(Matrix));
     matrix->rows = rows;
     matrix->columns = cols;
-    double** data = (double**)malloc(sizeof(double*) * rows);
-    for(int x = 0; x < rows; x++){
-        data[x] = (double*)calloc(cols, sizeof(double));
-    }
-    matrix->matrix = *data;
+    double* data = (double*)malloc(rows * cols * sizeof(double));
+    matrix->matrix = data;
     free(data);
     return matrix;
 }
@@ -69,7 +66,7 @@ Matrix user_input(){
 
 double* summ_elem(Matrix *matrix){
     int cols = matrix->columns;
-    double* summ_all = (double*)malloc(sizeof(double) * cols);
+    double* summ_all = new double[cols];
     for(int x = 0; x < matrix->columns; x++){
         for(int y = 0; y < matrix->rows; y++){
             summ_all[x] += matrix->matrix[y*(matrix->rows) + x];
@@ -92,7 +89,7 @@ int search_max_cols(Matrix* m){
 void sort_matrix(Matrix* m, int index_sort){
     int n = m->rows < m->columns ? m->rows : m->columns;
 
-    double* sort_arr = (double*)malloc(sizeof(double) * n);
+    double* sort_arr = (double*)malloc(sizeof(double) * m->columns* m->rows);
     for(int i = 0;i < n;i++) sort_arr[i] = 0;
     for(int x = index_sort; x < index_sort+1; x++) {
         for(int y = 0; y < n; y++) {

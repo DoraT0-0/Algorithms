@@ -1,0 +1,3 @@
+C:\VisualStudioCode\CodeGitHub\c++\lab4\lab4\x64\Debug\lab4.vcxproj.AssemblyReference.cache
+C:\VisualStudioCode\CodeGitHub\c++\lab4\lab4\x64\Debug\lab4.MyForm.resources
+C:\VisualStudioCode\CodeGitHub\c++\lab4\lab4\x64\Debug\lab4.vcxproj.GenerateResource.cache
