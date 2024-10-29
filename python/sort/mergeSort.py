@@ -18,9 +18,3 @@ def merge_sort(arr:list):
     if len(r) > 1:
         r= merge_sort(r)
     return merge(l, r)
-
-arr = [1, 6, 25, 3, 2, 9]
-
-arr = merge_sort(arr)
-
-print(arr)

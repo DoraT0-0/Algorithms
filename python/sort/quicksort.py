@@ -14,5 +14,3 @@ def quicksort(arr:list):
             mid.append(arr[i])
     return quicksort(left) + mid + quicksort(right)
 
-arr = [0, 8, 2, 1, -5, -5, 8]
-print(quicksort(arr))

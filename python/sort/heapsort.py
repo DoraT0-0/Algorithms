@@ -34,9 +34,3 @@ def delete_max_heap(arr:list, i:int):
     else:
         arr[i] = 0
 
-
-arr = [18,5,10,15,12,3,20,4,2,8,6,9,7,1]
-
-heap_sort(arr)
-
-print(arr)
