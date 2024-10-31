@@ -5,90 +5,101 @@ using namespace std;
 
 
 
-void InOutFirstFun(int *x){
-    cout << "(((2^(2/3)+27*y^(3/5))/(2^(1/2)+3*y^(1/10)) + 3*(32*y^2 - 2)^(1/10)) * 3^-2)^5" << endl;
-    cout << "Input y:";
-    cin >> *x;
+void InOutFirstFun(double *a){
+    cout << "(1/(a^1/2 + (a+1)^1/2) + 1/(a^1/2 - (a-1)^1/2))/(1+((a+1)/(a-1))^1/2)" << endl;
+    cout << "Input a (double):";
+    cin >> *a;
 }
 
 void FirstFun(void* result){
-    int y;
-    InOutFirstFun(&y);
-    if(y < 0){
+    double a;
+    InOutFirstFun(&a);
+    if(a <= 1){
         *static_cast<double*>(result) = 0;
     }
     else{
-        *static_cast<double*>(result) = pow(
-        (
-            (
-                (
-                    double(pow(2,(double)2/(double)3) + 27*pow(y,(double)3/(double)5))/double(sqrt(2)+3*pow(y, (double)1/(double)5))
-                )
-                +
-                (
-                    3*pow(32*pow(y,2)-2, double(1)/double(16))
-                )
-            )
-            *pow(3,-2)
-        ),5);
+        *static_cast<double*>(result) = 
+        ((1/(pow(a, 0.5) + pow(a+1, 0.5)))+(1/(pow(a, 0.5) - pow(a-1, 0.5))))
+        / 
+        (1+pow(a+1 / a-1, 0.5));
     }
 }
 
-void InOutSecondFun(float *x, int *y){
-    cout << "(((x^2-y^2)*(x^(1/3)+y^(1/3))/(x^(5/3)+(x^2*y^3)^(1/3)-(x^3*y^2)^(1/3)-y^(5/3)))-((x*y)^(1/3)+y^2/3))" << endl;
-    cout << "Input x:";
+void InOutSecondFun(float *x, float *a){
+    cout << "((x * (x^2-a^2)^-1/2 + 1)/(a* (x-a)^-1/2 + (x-a)^-1/2))/(((a^2 * (x+a)^1/2)/(x-(x^2-a^2)^1/2))+(1/(x^2-a*x)))" << endl;
+    cout << "Input x (float):";
     cin >> *x;
-    cout << "Input y:";
-    cin >> *y;
+    cout << "Input a (float):";
+    cin >> *a;
 }
 
 void SecondFun(void* result){
     float x;
-    int y;
-    InOutSecondFun(&x, &y);
-    if(y <= 0 and x <= 0){
+    float a;
+    InOutSecondFun(&x, &a);
+    if(x+a <= 0 || (a == 0 && x == 0)){
         *static_cast<double*>(result) = 0;
     }
     else{
         *static_cast<double*>(result) = 
             (
-                ((pow(x,2) - pow(y, 2)) * (pow(x, (double)1/(double)3) + pow(y, (double)1/(double)3))
+                (x*pow((pow(x, 2) - pow(a, 2)), -0.5) + 1)
                 /
-                (pow(x, (double)5/(double)3) + pow(pow(x,2)*pow(y,3), double(1)/(double)3) - pow(pow(x,3)*pow(y,2), double(1)/(double)3) - pow(y, (double)5/(double)3))
+                (a*pow(x-a,-0.5)+pow(x-a, 0.5))
             )
-            -
+            /
             (
-                pow(x*y, double(1)/double(3)) + pow(y, (double)2/(double)3)
-            )
+                (
+                    (pow(a, 2)*pow(x+a,0.5))
+                    /
+                    (x-pow(pow(x, 2)-pow(a, 2), 0.5))
+                )
+                +
+                (
+                    1
+                    /
+                    (pow(x, 2) - a*x)
+                )
             );
     }
 }
 
-void InOutThreeFun(double *a, double *b, double *c){
-    cout << "(1/(b*(a*b*c+a+c) - 1/(a+(1/(b+1/c))) : 1/(a+(1/b)))" << endl;
-    cout << "Input a:";
+void InOutThreeFun(int *m, int *n, double *a){
+    cout << "((a^1/m - a^1/n)^2 * 4*a^(m+n/m*n))/( (a^2/m - a^2/n)*((a^m+1 + (a^n+1)^1/n)^1/m))" << endl;
+    cout << "Input m (int):";
+    cin >> *m;
+    cout << "Input n (int):";
+    cin >> *n;
+    cout << "Input a (double):";
     cin >> *a;
-    cout << "Input b:";
-    cin >> *b;
-    cout << "Input c:";
-    cin >> *c;
 }
 
 void ThreeFun(void* result){
-    double a,b,c;
-    InOutThreeFun(&a, &b, &c);
-    if(b == 0 and c == 0){
+    double a;
+    int m,n;
+    InOutThreeFun(&m, &n, &a);
+    if((m == n) || (m == 0 && n == 0) || a <= 1){
         *static_cast<double*>(result) = 0;
     }
     else{
-        *static_cast<double*>(result) = (
+        *static_cast<double*>(result) = 
+        (
+            pow(pow(a, (double)1 / (double)m) - pow(a, (double)1 / (double)n), 2) * 4 * pow(a, (double)m+n / (double)m*n)
+        )
+        /
+        (
             (
-                (1/(b*(a*b*c)+a+c))
-                -
-                (1/(a+(1/(b+(1/c)))))
+                pow(a, (double) 2 / (double) m) - pow(a, (double) 2 / (double) n)
             )
-            /
-            (1/(a+(1/b)))
+            *
+            (
+                pow(
+                    pow(a, m+1)
+                    +
+                    pow(pow(a, n+1), (double) 1 / (double) n),
+                    (double) 1 / (double) m
+                )
+            )
         );
     }
 }

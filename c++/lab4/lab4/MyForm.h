@@ -72,6 +72,8 @@ namespace lab4 {
 
 
 
+
+
 	protected:
 
 	protected:
@@ -131,7 +133,7 @@ namespace lab4 {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(174, 15);
+			this->label2->Location = System::Drawing::Point(191, 15);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(73, 13);
 			this->label2->TabIndex = 1;
@@ -139,7 +141,7 @@ namespace lab4 {
 			// 
 			// Rows
 			// 
-			this->Rows->Location = System::Drawing::Point(253, 12);
+			this->Rows->Location = System::Drawing::Point(270, 12);
 			this->Rows->Name = L"Rows";
 			this->Rows->Size = System::Drawing::Size(59, 20);
 			this->Rows->TabIndex = 2;
@@ -171,6 +173,8 @@ namespace lab4 {
 			this->GridMatrix->Name = L"GridMatrix";
 			this->GridMatrix->Size = System::Drawing::Size(315, 244);
 			this->GridMatrix->TabIndex = 5;
+			this->GridMatrix->AllowUserToAddRows = false;
+			this->GridMatrix->AllowUserToDeleteRows = false;
 			// 
 			// CreateMatrix
 			// 
@@ -193,6 +197,9 @@ namespace lab4 {
 			// 
 			// ResultMatrix
 			// 
+			this->ResultMatrix->ReadOnly = true;
+			this->ResultMatrix->AllowUserToAddRows = false;
+			this->ResultMatrix->AllowUserToDeleteRows = false;
 			this->ResultMatrix->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->ResultMatrix->Location = System::Drawing::Point(365, 71);
 			this->ResultMatrix->Name = L"ResultMatrix";
@@ -222,14 +229,14 @@ namespace lab4 {
 			this->Num_Max_Row->AutoSize = true;
 			this->Num_Max_Row->Location = System::Drawing::Point(362, 47);
 			this->Num_Max_Row->Name = L"Num_Max_Row";
-			this->Num_Max_Row->Size = System::Drawing::Size(176, 13);
+			this->Num_Max_Row->Size = System::Drawing::Size(122, 13);
 			this->Num_Max_Row->TabIndex = 13;
-			this->Num_Max_Row->Text = L"Максимальная послед. в строке:";
+			this->Num_Max_Row->Text = L"Среднего ариф. строк:";
 			// 
 			// NumMaxRow
 			// 
 			this->NumMaxRow->AutoSize = true;
-			this->NumMaxRow->Location = System::Drawing::Point(544, 47);
+			this->NumMaxRow->Location = System::Drawing::Point(498, 47);
 			this->NumMaxRow->Name = L"NumMaxRow";
 			this->NumMaxRow->Size = System::Drawing::Size(33, 13);
 			this->NumMaxRow->TabIndex = 14;
@@ -279,31 +286,41 @@ namespace lab4 {
 #pragma endregion
 
 private: System::Void Run_Rand_Click(System::Object^ sender, System::EventArgs^ e) {
-	int col = System::Convert::ToInt32(Cols->Text);
-	int row = System::Convert::ToInt32(Rows->Text);
+	int row = GridMatrix->RowCount;
+	int col = GridMatrix->ColumnCount;
 	Matrix m = user_input(row, col, 1);
+	int max_col_or_row = m.columns < m.rows ? m.rows : m.columns;
+	int min_col_or_row = m.columns > m.rows ? m.rows : m.columns;
 	for (int x = 0; x < m.rows; x++) {
 		for (int y = 0; y < m.columns; y++) {
-			GridMatrix->Rows[x]->Cells[y]->Value = m.matrix[x * (m.columns) + y];
+			if (m.columns <= m.rows) GridMatrix->Rows[y]->Cells[x]->Value = m.matrix[x * (min_col_or_row)+y];
+			else GridMatrix->Rows[x]->Cells[y]->Value = m.matrix[x * (max_col_or_row)+y];
 		}
 	}
 }
 
 private: System::Void CreateMatrix_Click(System::Object^ sender, System::EventArgs^ e) {
-	int col = System::Convert::ToInt32(Cols->Text);
-	int row = System::Convert::ToInt32(Rows->Text);
-	GridMatrix->RowCount = row;
-	GridMatrix->ColumnCount = col;
-	ResultMatrix->RowCount = row;
-	ResultMatrix->ColumnCount = col;
-	for (int x = 0; x < row; x++) {
-		for (int y = 0; y <col; y++) {
-			GridMatrix->Rows[x]->Cells[y]->Value = 0;
+	if(Cols->TextLength == 0 || Rows->TextLength == 0) MessageBox::Show(this, "Вы не задали кол-во строк или столбцов", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	else {
+		int col = System::Convert::ToInt32(Cols->Text);
+		int row = System::Convert::ToInt32(Rows->Text);
+		if (col < 1 || row < 1) MessageBox::Show(this, "Кол-во строк или столбцов меньше 1 ", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		else if (col > 100 || row > 100) MessageBox::Show(this, "Кол-во строк или столбцов превышает максимальное значение (50) ", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		else {
+			GridMatrix->RowCount = row;
+			GridMatrix->ColumnCount = col;
+			ResultMatrix->RowCount = row;
+			ResultMatrix->ColumnCount = col;
+			for (int x = 0; x < row; x++) {
+				for (int y = 0; y < col; y++) {
+					GridMatrix->Rows[x]->Cells[y]->Value = 0;
+				}
+			}
 		}
 	}
 }
 double* manualFiling(int r, int c) {
-	double* a = (double*)malloc(sizeof(double) * r * c);
+	double* a = new double[r * c];
 	int i = 0;
 	for (int x = 0; x < r; x++) {
 		for (int y = 0; y < c; y++) {
@@ -312,32 +329,33 @@ double* manualFiling(int r, int c) {
 		}
 	}
 	return a;
-	free(a);
 }
 
 private: System::Void Run_Click(System::Object^ sender, System::EventArgs^ e) {
-		int col = System::Convert::ToInt32(Cols->Text);
-		int row = System::Convert::ToInt32(Rows->Text);
-		Matrix m = *(create_matrix(manualFiling(row, col), row, col));
+		int row = GridMatrix->RowCount;
+		int col = GridMatrix->ColumnCount;
+		Matrix m = *(init_matrix(manualFiling(row, col), row, col));
 		Max_Col->Text = System::Convert::ToString(search_max_cols(&m));
-		NumMaxRow->Text = System::Convert::ToString(number_max_row(&m));
+		NumMaxRow->Text = System::Convert::ToString(sdr_arf(&m));
 		sort_matrix(&m, search_max_cols(&m));
+		int max_col_or_row = m.columns < m.rows ? m.rows : m.columns;
+		int min_col_or_row = m.columns > m.rows ? m.rows : m.columns;
 		for (int x = 0; x < m.rows; x++) {
 			for (int y = 0; y < m.columns; y++) {
-				ResultMatrix->Rows[x]->Cells[y]->Value = m.matrix[x * (m.columns) + y];
+				if (m.columns >= m.rows) ResultMatrix->Rows[x]->Cells[y]->Value = m.matrix[x * (max_col_or_row)+y];
+				else ResultMatrix->Rows[x]->Cells[y]->Value = m.matrix[x * (min_col_or_row)+y];
 			}
 		}
 }
 private: System::Void Reset_Click(System::Object^ sender, System::EventArgs^ e) {
-		int col = System::Convert::ToInt32(Cols->Text);
-		int row = System::Convert::ToInt32(Rows->Text);
+		int row = GridMatrix->RowCount;
+		int col = GridMatrix->ColumnCount;
 		for (int x = 0; x < row; x++) {
 			for (int y = 0; y < col; y++) {
 				GridMatrix->Rows[x]->Cells[y]->Value = 0;
 				ResultMatrix->Rows[x]->Cells[y]->Value = 0;
 			}
 		}
-	
 }
 };
 }

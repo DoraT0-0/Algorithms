@@ -1,2 +1,12 @@
-﻿  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+﻿  MyForm.cpp
+C:\VisualStudioCode\CodeGitHub\c++\lab4\lab4\MyForm.h(316,45): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\VisualStudioCode\CodeGitHub\c++\lab4\lab4\MyForm.h(355,44): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\VisualStudioCode\CodeGitHub\c++\lab4\lab4\MyForm.h(356,46): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+  (компиляция исходного файла "MyForm.cpp")
+  
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   lab4.vcxproj -> C:\VisualStudioCode\CodeGitHub\c++\lab4\x64\Release\lab4.exe
