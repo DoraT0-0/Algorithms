@@ -1,6 +1,7 @@
 def euclidean(a: int, b: int):
     while b != 0:
-        r: int = a % b
+        r = a % b
+        print(r)
         a = b
         b = r
     return a
