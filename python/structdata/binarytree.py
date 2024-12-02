@@ -40,7 +40,7 @@ class BinaryTree:
         else:
             self.data = data
 
-arr = [1,2,4,5,7,8,9,12]
+arr = [1,2,4,5,7,8,9,12,11,13,14,15,16,18,19,20]
 tree = BinaryTree()
 def fillTree(arr):
     n = len(arr)//2

@@ -1,0 +1,1910 @@
+k1=97 |k2=101 |k3=271 |k4=40 |k5=47 |
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 1)mod 5)mod 3
+k1-> k4-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 1)mod 5)mod 3
+k1-> k4-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 2)mod 5)mod 3
+k2-> k3-> k4-> None
+None
+k1-> k5-> None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 1)mod 5)mod 3
+k1-> k4-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 2)mod 5)mod 3
+k2-> k3-> k4-> None
+None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 3)mod 5)mod 3
+k4-> None
+k1-> k2-> k3-> k5-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 1)mod 5)mod 3
+k1-> k4-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 2)mod 5)mod 3
+k2-> k3-> k4-> None
+None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 3)mod 5)mod 3
+k4-> None
+k1-> k2-> k3-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 1)mod 5)mod 3
+k1-> k4-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 2)mod 5)mod 3
+k2-> k3-> k4-> None
+None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 3)mod 5)mod 3
+k4-> None
+k1-> k2-> k3-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 5)mod 5)mod 3
+k2-> k3-> None
+k1-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 1)mod 5)mod 3
+k1-> k4-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 2)mod 5)mod 3
+k2-> k3-> k4-> None
+None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 3)mod 5)mod 3
+k4-> None
+k1-> k2-> k3-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 5)mod 5)mod 3
+k2-> k3-> None
+k1-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((3*x + 0)mod 5)mod 3
+k1-> k5-> None
+k2-> k3-> k4-> None
+None
+None
+None
+None
+None
+
+
+HashFun: ((0*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 1)mod 5)mod 3
+k4-> None
+k2-> k3-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 2)mod 5)mod 3
+k4-> None
+k1-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((0*x + 3)mod 5)mod 3
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((0*x + 5)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((1*x + 1)mod 5)mod 3
+None
+k2-> k3-> k4-> None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 2)mod 5)mod 3
+None
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 3)mod 5)mod 3
+k2-> k3-> None
+k1-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k5-> None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((1*x + 5)mod 5)mod 3
+k1-> k2-> k3-> k5-> None
+None
+k4-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 0)mod 5)mod 3
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 1)mod 5)mod 3
+k1-> k4-> k5-> None
+k2-> k3-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 2)mod 5)mod 3
+k2-> k3-> k4-> None
+None
+k1-> k5-> None
+None
+None
+None
+None
+
+HashFun: ((2*x + 3)mod 5)mod 3
+k4-> None
+k1-> k2-> k3-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 4)mod 5)mod 3
+None
+k1-> k2-> k3-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((2*x + 5)mod 5)mod 3
+k2-> k3-> None
+k1-> k4-> k5-> None
+None
+None
+None
+None
+None
+
+HashFun: ((3*x + 0)mod 5)mod 3
+k1-> k5-> None
+k2-> k3-> k4-> None
+None
+None
+None
+None
+None
+
+HashFun: ((3*x + 1)mod 5)mod 3
+k1-> k5-> None
+k4-> None
+k2-> k3-> None
+None
+None
+None
+None
