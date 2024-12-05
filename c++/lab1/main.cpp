@@ -61,7 +61,7 @@ double* randomlFiling(int r, int c){
     double* a = new double[r*c];
     int max = 1000, min = -1000;
     for(int i = 0;i < r*c;i++){
-        a[i] = rand() % (max - min + 1) + min;;
+        a[i] = rand() % (max - min + 1) + min;
     }
     return a;
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <cstdlib>
+
 struct Matrix {
     int n;
     int m;
@@ -52,15 +53,40 @@ void del(Matrix A){
     delete[] A.arr;
 }
 
-int main(){
-    Matrix A;
+
+void testMatrixFunctions() {
     srand(time(0));
-    A = initNM();
+
+    cout << L"Тест 1: Создание и инициализация матрицы 3x3" << std::endl;
+    Matrix A;
+    A.n = 3;
+    A.m = 3;
     A = create(A);
     initArr(A);
     show(A);
-    A=Processing0(A);
-    show(A);
+
+    cout << L"Тест 2: Транспонирование матрицы" << std::endl;
+    Matrix T = Processing0(A);
+    show(T);
+
     del(A);
+    del(T);
+}
+
+
+
+
+int main(){
+    // Matrix A;
+    // srand(time(0));
+    // A = initNM();
+    // A = create(A);
+    // initArr(A);
+    // show(A);
+    // A=Processing0(A);
+    // show(A);
+    // del(A);
+    setlocale(LC_ALL, "");
+    testMatrixFunctions();
     system("pause");
 }
