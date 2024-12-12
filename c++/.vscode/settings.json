@@ -106,7 +106,12 @@
     "streambuf": "cpp",
     "text_encoding": "cpp",
     "typeinfo": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "set": "cpp",
+    "iomanip": "cpp",
+    "sstream": "cpp",
+    "cstdarg": "cpp",
+    "codecvt": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
