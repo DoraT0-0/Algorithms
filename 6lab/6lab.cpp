@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Структура абонента
+
 struct Subscriber {
     string name;
     int phoneNumber;
@@ -45,8 +45,8 @@ public:
     ~RedBlackTree();
     void insert(const Subscriber& sub);
     Subscriber search(int number);
-    void printAll(); // выводит всю базу данных
-    map<string, int> countTariffs(); // возвращает статистику тарифов
+    void printAll();
+    map<string, int> countTariffs();
 };
 
 void RedBlackTree::rotateLeft(RBNode* x) {

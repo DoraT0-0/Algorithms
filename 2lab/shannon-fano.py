@@ -1,9 +1,9 @@
 class Node:
     def __init__(self, symbol=None, frequency=0, left=None, right=None):
-        self.symbol = symbol      # Символ (для листьев)
-        self.frequency = frequency  # Частота символа
-        self.left = left           # Левое поддерево
-        self.right = right         # Правое поддерево
+        self.symbol = symbol      
+        self.frequency = frequency  
+        self.left = left           
+        self.right = right        
 
     def __repr__(self):
         return f'Node({self.symbol}, {self.frequency})'
